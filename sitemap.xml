@@ -6,8 +6,6 @@
     
     <lastmod>2023-06-20</lastmod>
     
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   
   <url>
@@ -15,8 +13,6 @@
     
     <lastmod>2023-06-20</lastmod>
     
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   
   <url>
@@ -24,8 +20,6 @@
     
     <lastmod>2023-06-20</lastmod>
     
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   
   <url>
@@ -33,8 +27,6 @@
     
     <lastmod>2020-04-16</lastmod>
     
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   
   <url>
@@ -42,8 +34,6 @@
     
     <lastmod>2020-04-16</lastmod>
     
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   
   <url>
@@ -51,8 +41,6 @@
     
     <lastmod>2017-03-20</lastmod>
     
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   
   <url>
@@ -60,8 +48,6 @@
     
     <lastmod>2016-04-20</lastmod>
     
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   
 
@@ -76,8 +62,8 @@
   <url>
     <loc>http://yoursite-url/tags/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2023-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   
 
@@ -85,8 +71,8 @@
   <url>
     <loc>http://yoursite-url/categories/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2023-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   
 </urlset>
