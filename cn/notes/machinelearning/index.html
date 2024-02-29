@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/notes/perceptron/">
+  <link rel="canonical" href="http://yoursite-url/cn/notes/machinelearning/">
   <title>
     
-      感知机 - Guo Kai
+      机器学习 - X-Kay
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -230,7 +230,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"></a>
+      <a class="navbar-brand" href="/">静水流深</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -388,7 +388,7 @@
               <a class="tag" href="/tags/#神经网络" title="神经网络">神经网络</a>
               
             </div>
-            <h1>感知机</h1>
+            <h1>机器学习</h1>
             <h2 class="subheading"></h2>
             <span class="meta">
               Posted by Kay on
@@ -400,11 +400,11 @@
             <!-- WordCount start -->
             <div class="blank_box"></div>
             <span class="meta">
-              Estimated Reading Time <span class="post-count">3</span> Minutes
+              Estimated Reading Time <span class="post-count">7</span> Minutes
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">832</span> In Total
+              Words <span class="post-count">1.9k</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -466,40 +466,67 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <p>本笔记的作用在于思考与输出，和代码练习</p>
-<h1>2.1感知机是什么</h1>
-<p>感知机是作为神经网络的起源的算法，它接受多个信号作为输入，然后输出一个结果信号。感知机中的一个圆圈称为一个“神经元”或“节点”，有向箭头和上面的数字代表信号传递方向和权重，多个信号向同一个神经元传递时会被加和，当这个和超过一个限度（阈值）时，神经元才会输出1，也被称为“神经元被激活”。</p>
-<p>权重控制着信号的重要性（强度）。一个有两个输入信号的单层感知机可以用下式来表示：</p>
-<p>$$ y = \begin{cases}0, &amp; (w_1x_1+w_2x_2 &lt; \theta)\<br>
-1, &amp; (w_1x_1+w_2x_2 &gt;= \theta)\end{cases}<br>
-$$</p>
-<h1>2.3 感知机的实现</h1>
-<h2 id="2-3-1-感知机的简单实现">2.3.1 感知机的简单实现</h2>
-<p>我们通过认为确定感知机参数来简单实现一个逻辑电路中的与门（代码在下面）。</p>
-<p>我们目前是人为确定感知的参数，而机器学习和深度学习的研究课题是让计算机确定参数。计算机<strong>学习</strong>的过程就是选择合适的参数的过程，研究员要做的就是确定模型的结构，以及把训练数据交给计算机。</p>
-<h2 id="2-3-2-引入偏置项">2.3.2 引入偏置项</h2>
-<p>我们引入偏置b，当计算好权重与信号的乘积的和之后，我们再加上偏置，当最后的结果小于等于0时，神经元不被激活，大于0时，被激活。例如下面代码中的OR函数。<strong>权重决定输入信号的重要性，偏置决定了神经元被激活的容易程度。</strong></p>
-<p>补充：在深度学习模型中，我们经常要进行数组和矩阵的计算，NumPy外部库中的array类为我们提供了许多便捷的方法。</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">import</span> numpy as np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> AND(a, b):</span><br><span class="line">    <span class="attribute">w1</span>, w<span class="number">2</span>, theta = <span class="number">0</span>.<span class="number">5</span>, <span class="number">0</span>.<span class="number">5</span>, <span class="number">0</span>.<span class="number">8</span></span><br><span class="line">    <span class="attribute">temp</span> = w<span class="number">1</span>*a+w<span class="number">2</span>*b</span><br><span class="line">    <span class="attribute">if</span> temp &lt;= theta:</span><br><span class="line">        <span class="attribute">return</span> <span class="number">0</span></span><br><span class="line">    <span class="attribute">else</span>:</span><br><span class="line">        <span class="attribute">return</span> <span class="number">1</span></span><br><span class="line">    </span><br><span class="line"><span class="attribute">def</span> OR(x<span class="number">1</span>, x<span class="number">2</span>):</span><br><span class="line">    <span class="attribute">arg</span> = np.array([x<span class="number">1</span>, x<span class="number">2</span>])</span><br><span class="line">    <span class="attribute">w</span> = np.array([<span class="number">0</span>.<span class="number">5</span>, <span class="number">0</span>.<span class="number">5</span>])</span><br><span class="line">    <span class="attribute">b</span> = -<span class="number">0</span>.<span class="number">1</span></span><br><span class="line">    <span class="attribute">temp</span> = np.sum(arg*w)+b</span><br><span class="line">    <span class="attribute">if</span> temp &lt;= <span class="number">0</span>:</span><br><span class="line">        <span class="attribute">return</span> <span class="number">0</span></span><br><span class="line">    <span class="attribute">else</span>:</span><br><span class="line">        <span class="attribute">return</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">print</span>(AND(<span class="number">0</span>,<span class="number">0</span>), AND(<span class="number">1</span>,<span class="number">0</span>), AND(<span class="number">0</span>,<span class="number">1</span>),AND(<span class="number">1</span>,<span class="number">1</span>))</span><br><span class="line"><span class="attribute">print</span>(OR(<span class="number">0</span>,<span class="number">0</span>), OR(<span class="number">1</span>,<span class="number">0</span>), OR(<span class="number">0</span>,<span class="number">1</span>), OR(<span class="number">1</span>,<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1>2.4 感知机的局限性</h1>
-<p>感知机的局限性在于它只能表示由一条直线分割的空间，例如使用单层感知机便无法分割逻辑电路异或门的空间。（准确来说这是单层感知机的局限性）</p>
-<h1>2.5 多层感知机</h1>
-<p>感知机的绝妙之处在于它可以<strong>叠加层/加深层</strong>，感知机经过叠加后可以具有更多的表示，能够表示非线性的表示。</p>
-<p>多层感知机从左往右分别为第0层，第1层，第2层，…。有人根据实际具有权重的层数来判定是几层感知机，也有人根据实际的神经元层数来判定是几层感知机。</p>
-<p>多层感知机甚至可以构造计算机，有理论证明：激活函数使用了sigmoid函数的2层感知机可以表示任意函数。（虽然2层感知机的参数在实际中会非常难以确定）</p>
-
+        <h1>4.1 从数据中学习</h1>
+<p>神经网络的特征就是可以从数据中学习。所谓“从数据中学习”，是指神经网络可以通过数据自行决定最合适的权重参数。</p>
+<h2 id="4-1-1数据驱动">4.1.1数据驱动</h2>
+<p>数据是机器学习的命根子。从数据中寻找答案、从数据中发现模式、根据数据讲故事…</p>
+<p>数据驱动的方法，脱离了过往以人为中心的方法。</p>
+<p>传统的机器学习，需要先由认为提取数据的特征量，然后再由SVM,KNN等分类器进行学习。然而在神经网络中，不需要认为提取特征量，神经网络直接进行从数据到输出的学习，提取特征量的过程都是由神经网络来实现的。（也因此，深度学习有时也被称为端到端的机器学习，端到端的意思也就是从原始数据（输入）到目标结果（输出）的意思）</p>
+<h2 id="4-1-2训练数据和测试数据">4.1.2训练数据和测试数据</h2>
+<p>在机器学习过程中，一般将数据分类训练数据（或者称为监督数据）和测试数据两部分来进行学习和推理。为了正确评估模型的泛化能力和避免模型过拟合，必须划分训练数据和测试数据。</p>
+<p>补充：模型只对某个数据集过度拟合的状态称为<em>过拟合</em></p>
+<h1>4.2 损失函数</h1>
+<p>就像我们可以使用一个数值指标来判度自己的幸福程度一样。神经网络的学习通过某个指标表示现在的状态，然后以这个状态为基准，寻找最优权重参数。神经网络中所使用的指标就是损失函数。**损失函数是衡量网络性能的“恶劣程度”的指标，即当前的神经网络对监督数据在多大程度上不拟合，在多大程度上不一致。**如果给损失函数乘上一个负值，就可以解释为“在多大程度上不坏”，即“性能有多好”。</p>
+<h2 id="4-2-1-均方误差">4.2.1 均方误差</h2>
+<p>均方误差作为损失函数如下：<br>
+$$E = \frac{1}{2}\sum_k(y_k-t_k)^2$$<br>
+其中$y_k$表示神经网络的输出，$t_k$表示监督数据，$k$表示数据的维数。</p>
+<h2 id="4-2-2-交叉熵损失">4.2.2 交叉熵损失</h2>
+<p>交叉熵作为损失函数如下：<br>
+$$E = -\sum_k t_klogy_k$$<br>
+$t_k$实际中一般为one-hot标签，所以交叉熵损失实际上计算的是对应正确解标签的输出的自然对数的负值，这个值越接近0越好</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import numpy as <span class="built_in">np</span></span><br><span class="line"></span><br><span class="line">def mean_squared_error(y, t):</span><br><span class="line">    <span class="built_in">return</span> <span class="number">0.5</span> * <span class="built_in">np</span>.<span class="built_in">sum</span>((y-t)**<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">def cross_entropy_error(y, t):</span><br><span class="line">    <span class="built_in">delta</span> = <span class="number">1e-7</span> # 避免出现<span class="built_in">log</span> <span class="number">0</span></span><br><span class="line">    <span class="built_in">return</span> -<span class="built_in">np</span>.<span class="built_in">sum</span>(t*<span class="built_in">np</span>.<span class="built_in">log</span>(y+<span class="built_in">delta</span>))</span><br></pre></td></tr></table></figure>
+<h2 id="4-2-3-mini-batch学习">4.2.3 mini-batch学习</h2>
+<p>机器学习使用训练数据进行学习，也就是使用训练数据计算损失函数的值，找出使该值尽可能小的参数，因此计算损失函数必须将所有的训练数据作为对象。也就是如果由N个数据的话，我们就要把这N个数据的损失函数的总和或算数平均作为学习的目标。</p>
+<p>在实验中，如果遇到海量的数据，比如几百万，几千万之多，这种情况下以全体数据作为对象计算损失函数是不现实的。因此，在实际中，我们会从全部数据中随机选出一部分，作为全部数据的“近似”，也就是从训练数据中选出一批数据(称为mini-batch，小批量)，然后对每个mini-batch进行学习，这种学些方式称为mini-batch学习，mini-batch学习的过程中也用到了批处理的思想。（这种方法就是统计学中的，以抽样样本的情况来代表总体样本的情况）</p>
+<h2 id="4-2-4-为什么需要损失函数（重要）">4.2.4 为什么需要损失函数（重要）</h2>
+<p>我们来关注神经网络中的某一个权重参数，此时，对该权重参数的损失函数求导，表示的就是“<strong>如果稍微改变这个权重参数的值，损失函数的值如何变化</strong>”。如果导数的值为负数，通过该权重参数向正方向改变，可以减小损失函数的值；反过来，导数值为正，权重参数向负方向改变，也可以减小损失函数的值。当导数为0时，无论权重参数向哪个方向改变，损失函数的值都不会改变，此时该权重参数的更新会停留在此处。</p>
+<p><strong>注意：在神经网络的学习中，不能将识别精度作为指标。因为如果以识别精度为指标，则参数的导数在绝大多数地方都会变为0</strong></p>
+<h2 id="4-3-数值微分">4.3 数值微分</h2>
+<h3 id="4-3-1-导数">4.3.1 导数</h3>
+<p>采用微小的差分实现求导数二点过程称为数值微分</p>
+<h3 id="4-3-2-偏导数">4.3.2 偏导数</h3>
+<p>自行复习</p>
+<h2 id="4-4-梯度">4.4 梯度</h2>
+<p><strong>由全部变量组成的向量称为梯度</strong><br>
+梯度有以下特征：</p>
+<ol>
+<li>梯度指向各点处函数值降低的地方，更严格地说，梯度指示的方向是各点处函数值减小最多的方向</li>
+<li>越靠近鞍点，梯度的大小越大</li>
+</ol>
+<h3 id="4-4-1-梯度法">4.4.1 梯度法</h3>
+<p>梯度法是寻找函数最大值或最小值的方法：</p>
+<p>在梯度法中，函数的取值从当前位置沿着梯度方向前进一定距离，然后在新的地方重新求梯度，再沿着新梯度方向前进，如此反复，不断地沿着梯度方向前进。</p>
+<p>数学表示:<br>
+$$ x_0 = x_0-\eta \frac{\varphi f}{\varphi x_0} $$</p>
+<p>其中$\eta$称为学习率，需要人为确定，学习率过大或过小，都无法使梯度法达到一个“好的位置”</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mini-batch版的cross entropy error</span></span><br><span class="line"><span class="attribute">import</span> numpy as np</span><br><span class="line"><span class="attribute">def</span> cross_entropy_error(y, t): # one-hot版本</span><br><span class="line">    <span class="attribute">if</span> y.ndim == <span class="number">1</span>:</span><br><span class="line">        <span class="attribute">t</span> = t.reshape(<span class="number">1</span>, t.size)</span><br><span class="line">        <span class="attribute">y</span> = y.reshape(<span class="number">1</span>, y.size)</span><br><span class="line">    <span class="attribute">print</span>(y)</span><br><span class="line">    <span class="attribute">print</span>(t)    </span><br><span class="line">    <span class="attribute">batch_size</span> = y.shape[<span class="number">0</span>]</span><br><span class="line">    <span class="attribute">return</span> -np.sum(t*np.log(y+<span class="number">1</span>e-<span class="number">7</span>))/batch_size</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">y1</span> = np.array([[<span class="number">0</span>.<span class="number">2</span>,<span class="number">0</span>.<span class="number">3</span>,<span class="number">0</span>.<span class="number">5</span>],[<span class="number">0</span>.<span class="number">8</span>,<span class="number">0</span>.<span class="number">1</span>,<span class="number">0</span>.<span class="number">1</span>],[<span class="number">0</span>.<span class="number">6</span>,<span class="number">0</span>.<span class="number">1</span>,<span class="number">0</span>.<span class="number">3</span>]])</span><br><span class="line"><span class="attribute">t1</span> = np.array([[<span class="number">0</span>,<span class="number">1</span>,<span class="number">0</span>],[<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>],[<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>]])</span><br><span class="line"><span class="attribute">print</span>(y<span class="number">1</span>)</span><br><span class="line"><span class="attribute">print</span>(t<span class="number">1</span>)</span><br><span class="line"><span class="attribute">y2</span> = np.array([<span class="number">0</span>.<span class="number">8</span>,<span class="number">0</span>.<span class="number">1</span>,<span class="number">0</span>.<span class="number">1</span>])</span><br><span class="line"><span class="attribute">t2</span> = np.array([<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>])</span><br><span class="line"><span class="attribute">print</span>(y<span class="number">2</span>)</span><br><span class="line"><span class="attribute">print</span>(t<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">print</span>(cross_entropy_error(y<span class="number">1</span>,t<span class="number">1</span>))</span><br><span class="line"><span class="attribute">print</span>(cross_entropy_error(y<span class="number">2</span>,t<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一元函数的数值微分实例</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">import</span> numpy as np</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> function_<span class="number">1</span>(x):</span><br><span class="line">    <span class="attribute">return</span> <span class="number">0</span>.<span class="number">01</span>*x**<span class="number">2</span>+<span class="number">0</span>.<span class="number">1</span>*x</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> numerical_differentiation(f,x):</span><br><span class="line">    <span class="attribute">h</span> = <span class="number">1</span>e-<span class="number">4</span> # 使用程序实现数值微分，差分采用<span class="number">0</span>.<span class="number">0001</span>即可获得很好的效果</span><br><span class="line">    <span class="attribute">return</span> (f(x+h)-f(x-h))/(<span class="number">2</span>*h)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">print</span>(numerical_differentiation(function_<span class="number">1</span>,<span class="number">5</span>))</span><br><span class="line"><span class="attribute">print</span>(numerical_differentiation(function_<span class="number">1</span>,<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> numerical_gradient(f, x):</span><br><span class="line">    <span class="attribute">h</span> = <span class="number">1</span>e-<span class="number">4</span></span><br><span class="line">    <span class="attribute">grad</span> = np.zeros_like(x)</span><br><span class="line"></span><br><span class="line">    <span class="attribute">for</span> idx in range(x.size): # 轮流计算每个偏导数</span><br><span class="line">        <span class="attribute">tmp_val</span> = x[idx]</span><br><span class="line"></span><br><span class="line">        <span class="attribute">x</span>[idx] = tmp_val+h</span><br><span class="line">        <span class="attribute">fxh1</span> = f(x)</span><br><span class="line"></span><br><span class="line">        <span class="attribute">x</span>[idx] = tmp_val-h</span><br><span class="line">        <span class="attribute">fxh2</span> = f(x)</span><br><span class="line"></span><br><span class="line">        <span class="attribute">grad</span>[idx] = (fxh<span class="number">1</span>-fxh<span class="number">2</span>)/(<span class="number">2</span>*h)</span><br><span class="line">        <span class="attribute">x</span>[idx] = tmp_val</span><br><span class="line"></span><br><span class="line">    <span class="attribute">return</span> grad</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> gradient_descent(f, init_x, lr = <span class="number">0</span>.<span class="number">01</span>, step_num =<span class="number">100</span>):</span><br><span class="line">    <span class="attribute">x</span> = init_x</span><br><span class="line"></span><br><span class="line">    <span class="attribute">for</span> i in range(step_num):</span><br><span class="line">        <span class="attribute">grad</span> = gradient_descent(f, x)</span><br><span class="line">        <span class="attribute">x</span> -= lr*grad</span><br><span class="line"></span><br><span class="line">    <span class="attribute">return</span> x</span><br></pre></td></tr></table></figure>
+<h2 id="4-5-学习算法的实现">4.5 学习算法的实现</h2>
+<p>class TwoLayerNet:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 两层神经网络的实现</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> sys, os</span><br><span class="line">sys.path.append(os.curdir)</span><br><span class="line"><span class="keyword">from</span> common.functions <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> common.gradient <span class="keyword">import</span> numerical_gradient</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TwoLayerNet</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, input_size, hidden_size,output_size,weight_init_std=<span class="number">0.01</span></span>):</span> <span class="comment"># 初始化模型</span></span><br><span class="line">        self.params = &#123;&#125;</span><br><span class="line">        self.params[<span class="string">&#x27;W1&#x27;</span>] = weight_init_std * np.random.randn(input_size, hidden_size)</span><br><span class="line">        self.params[<span class="string">&#x27;b1&#x27;</span>] = np.zeros(hidden_size)</span><br><span class="line">        self.params[<span class="string">&#x27;W2&#x27;</span>] = weight_init_std * np.random.randn(hidden_size, output_size)</span><br><span class="line">        self.params[<span class="string">&#x27;b1&#x27;</span>] = np.zeros(output_size)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">predict</span>(<span class="params">self, x</span>):</span></span><br><span class="line">        a1 = np.dot(x, self.params[<span class="string">&#x27;W1&#x27;</span>])+self.params[<span class="string">&#x27;b1&#x27;</span>]</span><br><span class="line">        z1 = sigmoid(a1)</span><br><span class="line">        a2 = np.dot(z1, self.params[<span class="string">&#x27;W2&#x27;</span>])+self.params[<span class="string">&#x27;b2&#x27;</span>]</span><br><span class="line">        z2 = softmax(a2)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> z2</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">loss</span>(<span class="params">self, x, t</span>):</span></span><br><span class="line">        y = self.predict(x)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> cross_entropy_error(y, t)</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">accuracy</span>(<span class="params">self, x, t</span>):</span></span><br><span class="line">        y = self.predict(x)</span><br><span class="line">        y = np.argmax(y, axis=<span class="number">1</span>)</span><br><span class="line">        </span><br></pre></td></tr></table></figure>
 
         <hr>
         <!-- Pager -->
         <ul class="pager">
           
           <li class="previous">
-            <a href="/notes/neuralnetwork/" data-toggle="tooltip" data-placement="top" title="神经网络">&larr; Previous Post</a>
+            <a href="/cn/notes/learningtrick/" data-toggle="tooltip" data-placement="top" title="与学习相关的技巧">&larr; Previous Post</a>
           </li>
           
           
           <li class="next">
-            <a href="/cn/Hexo-Theme-LiveMyLife/" data-toggle="tooltip" data-placement="top" title="Hexo-Theme-LiveMyLife">Next Post &rarr;</a>
+            <a href="/cn/notes/neuralnetwork/" data-toggle="tooltip" data-placement="top" title="神经网络">Next Post &rarr;</a>
           </li>
           
         </ul>
@@ -548,7 +575,7 @@ $$</p>
       </a>
     </li>
     <li class="social-share-li">
-      <a target="_blank" class="social-share-icon" href="mailto:?subject=感知机&body=Hi,I found this website and thought you might like it http://yoursite-url/notes/perceptron/">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=机器学习&body=Hi,I found this website and thought you might like it http://yoursite-url/cn/notes/machinelearning/">
         <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
       </a>
     </li>
@@ -583,7 +610,7 @@ $$</p>
       repo: '',
       owner: '',
       admin: '',
-      id: 'Tue Jun 20 2023 12:12:40 GMT+0800', // Ensure uniqueness and length less than 50
+      id: 'Tue Jun 20 2023 19:12:40 GMT+0800', // Ensure uniqueness and length less than 50
       distractionFreeMode: false, // Facebook-like distraction free mode
       perPage: 10,
       pagerDirection: 'last',
@@ -636,7 +663,7 @@ $$</p>
         <div id="toc" class="toc-article">
         <strong class="toc-title">目录</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">2.1感知机是什么</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">2.3 感知机的实现</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-3-1-%E6%84%9F%E7%9F%A5%E6%9C%BA%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">2.3.1 感知机的简单实现</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-3-2-%E5%BC%95%E5%85%A5%E5%81%8F%E7%BD%AE%E9%A1%B9"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">2.3.2 引入偏置项</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">2.4 感知机的局限性</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">2.5 多层感知机</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">4.1 从数据中学习</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-1-1%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">4.1.1数据驱动</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-1-2%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E5%92%8C%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">4.1.2训练数据和测试数据</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">4.2 损失函数</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-2-1-%E5%9D%87%E6%96%B9%E8%AF%AF%E5%B7%AE"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">4.2.1 均方误差</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-2-2-%E4%BA%A4%E5%8F%89%E7%86%B5%E6%8D%9F%E5%A4%B1"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">4.2.2 交叉熵损失</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-2-3-mini-batch%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">4.2.3 mini-batch学习</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-2-4-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%EF%BC%88%E9%87%8D%E8%A6%81%EF%BC%89"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">4.2.4 为什么需要损失函数（重要）</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-3-%E6%95%B0%E5%80%BC%E5%BE%AE%E5%88%86"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">4.3 数值微分</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4-3-1-%E5%AF%BC%E6%95%B0"><span class="toc-nav-number">2.5.1.</span> <span class="toc-nav-text">4.3.1 导数</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4-3-2-%E5%81%8F%E5%AF%BC%E6%95%B0"><span class="toc-nav-number">2.5.2.</span> <span class="toc-nav-text">4.3.2 偏导数</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-4-%E6%A2%AF%E5%BA%A6"><span class="toc-nav-number">2.6.</span> <span class="toc-nav-text">4.4 梯度</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4-4-1-%E6%A2%AF%E5%BA%A6%E6%B3%95"><span class="toc-nav-number">2.6.1.</span> <span class="toc-nav-text">4.4.1 梯度法</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-5-%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-nav-number">2.7.</span> <span class="toc-nav-text">4.5 学习算法的实现</span></a></li></ol></li></ol>
         
         </div>
       </aside>

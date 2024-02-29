@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-xxxxxx-xx');
+    </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+    <script type="text/javascript">
+      // Originial
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  <!-- Baidu Push -->
+  
+    <script>
+      (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();
+    </script>
+  
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc"/>
+  <meta name="baidu-site-verification" content="PpzM9WxOJU"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="It&#39;s an IT blog..."/>
+  <meta name="keyword" content=" IT  blog, Blog"/>
+  <link rel="shortcut icon" href="/img/avatar/k.png"/>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+
+  
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css"/>
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="/css/widget.css"/>
+    <link rel="stylesheet" href="/css/rocket.css"/>
+    <link rel="stylesheet" href="/css/signature.css"/>
+    <link rel="stylesheet" href="/css/catalog.css"/>
+    <link rel="stylesheet" href="/css/livemylife.css"/>
+
+    
+      <!-- wave start -->
+      <link rel="stylesheet" href="/css/wave.css"/>
+      <!-- wave end -->
+    
+
+    
+      <!-- top start (article top hot config) -->
+      <link rel="stylesheet" href="/css/top.css"/>
+      <!-- top end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/scroll.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+      <!-- viewer start (Picture preview) -->
+      <link rel="stylesheet" href="/css/viewer.min.css"/>
+      <!-- viewer end -->
+    
+
+    
+      <!-- Search start -->
+      <link rel="stylesheet" href="/css/search.css"/>
+      <!-- Search end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/themecolor.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+
+    
+      <!-- gitalk start -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+      <link rel="stylesheet" href="/css/gitalk.css"/>
+      <!-- gitalk end -->
+    
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/cn/notes/neuralnetwork/">
+  <title>
+    
+      神经网络 - X-Kay
+    
+  </title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+	<body ontouchstart="" class="body--light body--dark">
+
+
+		<!-- ThemeColor -->
+		
+		<!-- ThemeColor -->
+<style type="text/css">
+  .body--light {
+    --light-mode: none;
+    --dark-mode: block;
+  }
+  .body--dark {
+    --light-mode: block;
+    --dark-mode: none;
+  }
+  i.mdui-icon.material-icons.light-mode {
+    display: var(--light-mode);
+  }
+  i.mdui-icon.material-icons.dark-mode {
+    display: var(--dark-mode);
+  }
+</style>
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons light-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+<script>
+  //getCookieValue
+  function getCookieValue(a) {
+    var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b
+      ? b.pop()
+      : '';
+  }
+  let themeMode = 'dark';
+  if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
+    let dbody = document.body.classList;
+    themeMode === 'dark' ? dbody.remove('body--dark') : dbody.add('body--dark');
+  }
+
+  //setCookieValue
+  var toggleBtn = document.querySelector(".toggle");
+  toggleBtn.addEventListener("click", function () {
+    var e = document.body.classList.contains("body--dark");
+    var cookieString = e
+      ? "dark"
+      : "light";
+    var exp = new Date();
+    exp.setTime(exp.getTime() + 3 * 24 * 60 * 60 * 1000); //3天过期
+    document.cookie = "sb-color-mode=" + cookieString + ";expires=" + exp.toGMTString() + ";path=/";
+  });
+</script>
+
+		
+
+		<!-- Gitter -->
+		
+		<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+		
+
+		<!-- Navigation (contains search)-->
+		<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">静水流深</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux: <nav>'s height woule be hold on by its content. so, when navbar scale out, the <nav> will cover tags. also mask any touch event of tags, unfortunately. -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">首页</a>
+          </li>
+
+          
+          
+          
+          
+          <li>
+            <a href="/about/">
+              
+              关于
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              分类
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archive/">
+              
+              归档
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              标签
+              
+              
+            </a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a class="popup-trigger">
+              <span class="search-icon"></span>搜索</a>
+          </li>
+          
+
+          <!-- LangSelect -->
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+<script>
+  // Drop Bootstarp low-performance Navbar Use customize navbar with high-quality material design animation in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+		<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    .body--light {
+      /* intro-header */
+      --intro-header-background-image-url-home: url('/img/header_img/Bike.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
+    }
+    .body--dark {
+      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/Bike.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
+    }
+
+    header.intro-header {
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/lml_bg.jpg'); */
+      
+    }
+
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#神经网络" title="神经网络">神经网络</a>
+              
+            </div>
+            <h1>神经网络</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Kay on
+              2023-06-20
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">8</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">1.9k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+		<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <p>多层感知机的优点在于它几乎可以进行任何复杂的处理，但是缺点在于人为确定感知机的合适的、复合预期的参数的过程是非常复杂的，神经网络的出现就是为了解决这个问题，因为神经网络有一个重要的性质就是它可以自动从数据中学习到合适的权重参数。</p>
+<h1>3.1 从感知机到神经网络</h1>
+<h2 id="3-1-1-神经网络的例子">3.1.1 神经网络的例子</h2>
+<p>用图来表示神经网络的话，我们把最左边的一列称为输入层，最右边的一列称为输出层，中间的统一称为中间层（隐藏层）。</p>
+<h2 id="3-1-3-激活函数登场">3.1.3 激活函数登场</h2>
+<p>激活函数将输入信号的总和转换为输出信号，激活函数的作用在于决定如何激活输入信号的总和。激活函数是感知机和神经网络的桥梁。</p>
+<p>一般而言，“朴素感知机”/“人工神经元”是指单层网络，指的是激活函数使用了阶跃函数的模型。“多层感知机”是指神经网络，即使用sigmoid函数等平滑的激活函数的多层网络。</p>
+<h1>3.2 激活函数</h1>
+<h2 id="3-2-1-阶跃函数的实现及图像绘制">3.2.1 阶跃函数的实现及图像绘制</h2>
+<p>阶跃函数：阶跃函数这种激活函数以阈值为界，一旦输入超过阈值，就切换输出。下述代码通过python的代码技巧实现了一个可以支持数组的阶跃函数：</p>
+<h2 id="3-2-2-sigmoid函数的实现及图像绘制">3.2.2 sigmoid函数的实现及图像绘制</h2>
+<p>sigmoid函数是神经网络中经常使用的一个函数：<br>
+$$h(x) = \frac{1}{1+e^{-x}}$$</p>
+<h2 id="3-2-3-非线性函数">3.2.3 非线性函数</h2>
+<h2 id="3-2-4-ReLU函数">3.2.4 ReLU函数</h2>
+<p>在神经网络的发展历史上，sigmoid函数很早就开始使用了，而最近则主要在使用ReLU函数。ReLU函数在输入值大于0时，直接输出改值，在输入小于等于0时，则输入0。<br>
+$$h(x) = \begin{cases} x &amp; (x &gt; 0) \ 0 &amp; (x &lt;= 0)\end{cases}$$</p>
+<figure class="highlight sas"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import numpy <span class="meta">as</span> np</span><br><span class="line">import matplotlib.pyplot <span class="meta">as</span> plt</span><br><span class="line"></span><br><span class="line">def step_functi<span class="meta">on(</span><span class="meta">x</span>):</span><br><span class="line">    y = (<span class="meta">x</span> &gt; 0)</span><br><span class="line">    <span class="meta">return</span> y.astype(np.int_) # numpy数组类型转换函数，参数为期望转换的类型</span><br><span class="line"></span><br><span class="line">def sigmoid(<span class="meta">x</span>):</span><br><span class="line">    <span class="meta">return</span> 1/(1+np<span class="meta">.exp(</span>-<span class="meta">x</span>))</span><br><span class="line"></span><br><span class="line">def ReLU(<span class="meta">x</span>):</span><br><span class="line">    <span class="meta">return</span> np.maximum(0,<span class="meta">x</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">x</span> = np.<span class="meta">arange(</span>-4.0, 4.0, 0.01)</span><br><span class="line">y = step_functi<span class="meta">on(</span><span class="meta">x</span>)</span><br><span class="line">y2 = sigmoid(<span class="meta">x</span>)</span><br><span class="line">y3 = ReLU(<span class="meta">x</span>)</span><br><span class="line">plt.plot(<span class="meta">x</span>, y)</span><br><span class="line">plt.plot(<span class="meta">x</span>, y2, linestyle=<span class="string">&quot;--&quot;</span>)</span><br><span class="line">plt.plot(<span class="meta">x</span>, y3, linestyle = <span class="string">&quot;-.&quot;</span>)</span><br><span class="line">plt.ylim(-0.1, 1.1)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h1>3.4 三层神经网络的实现</h1>
+<p>神经网络中，使用矩阵运算可以加快模型的运算效率，每两层之间的参数传递过程可以用下面的矩阵乘法表达式来标识：<br>
+$$Y=XW+B$$<br>
+其中，X为上一层的神经元信号，W为权重矩阵，B为偏置矩阵</p>
+<p>注意：其实除了输入层外的每一层神经元都需要激活函数,这里在引入一个激活函数：恒等函数，恒等函数会将输入原样输出</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">import</span> numpy as np</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> identity_function(x):</span><br><span class="line">    <span class="attribute">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> sigmoid(x):</span><br><span class="line">    <span class="attribute">return</span> <span class="number">1</span>/(<span class="number">1</span>+np.exp(-x))</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> init_network():</span><br><span class="line">    <span class="attribute">network</span> = &#123;&#125;</span><br><span class="line">    <span class="attribute">network</span>[&#x27;W<span class="number">1</span>&#x27;] = np.array([[<span class="number">0</span>.<span class="number">1</span>,<span class="number">0</span>.<span class="number">3</span>,<span class="number">0</span>.<span class="number">5</span>],[<span class="number">0</span>.<span class="number">2</span>,<span class="number">0</span>.<span class="number">4</span>,<span class="number">0</span>.<span class="number">6</span>]])</span><br><span class="line">    <span class="attribute">network</span>[&#x27;B<span class="number">1</span>&#x27;] = np.array([<span class="number">0</span>.<span class="number">1</span>,<span class="number">0</span>.<span class="number">2</span>,<span class="number">0</span>.<span class="number">3</span>])</span><br><span class="line">    <span class="attribute">network</span>[&#x27;W<span class="number">2</span>&#x27;] = np.array([[<span class="number">0</span>.<span class="number">1</span>,<span class="number">0</span>.<span class="number">4</span>],[<span class="number">0</span>.<span class="number">2</span>,<span class="number">0</span>.<span class="number">5</span>],[<span class="number">0</span>.<span class="number">3</span>,<span class="number">0</span>.<span class="number">6</span>]])</span><br><span class="line">    <span class="attribute">network</span>[&#x27;B<span class="number">2</span>&#x27;] = np.array([<span class="number">0</span>.<span class="number">1</span>,<span class="number">0</span>.<span class="number">2</span>])</span><br><span class="line">    <span class="attribute">network</span>[&#x27;W<span class="number">3</span>&#x27;] = np.array([[<span class="number">0</span>.<span class="number">1</span>,<span class="number">0</span>.<span class="number">3</span>],[<span class="number">0</span>.<span class="number">2</span>,<span class="number">0</span>.<span class="number">4</span>]])</span><br><span class="line">    <span class="attribute">network</span>[&#x27;B<span class="number">3</span>&#x27;] = np.array([<span class="number">0</span>.<span class="number">1</span>, <span class="number">0</span>.<span class="number">2</span>])</span><br><span class="line"></span><br><span class="line">    <span class="attribute">return</span> network</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> forward(network, x):</span><br><span class="line">    </span><br><span class="line">    <span class="attribute">a1</span> = sigmoid(np.dot(x, network[&#x27;W<span class="number">1</span>&#x27;])+network[&#x27;B<span class="number">1</span>&#x27;])</span><br><span class="line">    <span class="attribute">a2</span> = sigmoid(np.dot(a<span class="number">1</span>, network[&#x27;W<span class="number">2</span>&#x27;])+network[&#x27;B<span class="number">2</span>&#x27;])</span><br><span class="line">    <span class="attribute">a3</span> = identity_function(np.dot(a<span class="number">2</span>, network[&#x27;W<span class="number">3</span>&#x27;])+network[&#x27;B<span class="number">3</span>&#x27;])</span><br><span class="line"></span><br><span class="line">    <span class="attribute">return</span> a<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">x</span> = np.array([<span class="number">1</span>.<span class="number">0</span>, <span class="number">0</span>.<span class="number">5</span>])</span><br><span class="line"><span class="attribute">network</span> = init_network()</span><br><span class="line"><span class="attribute">print</span>(forward(network=network, x=x))</span><br></pre></td></tr></table></figure>
+<h1>3.5 输出层的设计</h1>
+<p>神经网络可以用来解决回归问题和分类问题，不过需要根据情况选择输出层的函数，一般来说，回归问题采用恒等函数，分类问题采用softmax函数。（输出层的激活函数用$\sigma(x)$）表示。</p>
+<h2 id="3-5-1-恒等函数和softmax函数">3.5.1 恒等函数和softmax函数</h2>
+<p>恒等函数会将输入原样输出，而softmax函数是下列函数:<br>
+$$y_k = \frac{exp(a_k)}{\sum_{i=1}^n{exp(a_i)}}$$</p>
+<h2 id="3-5-2-在代码中实现softmax函数">3.5.2 在代码中实现softmax函数</h2>
+<p>在代码的实现过程中，我们需要注意指数函数的“溢出”问题，当参数的值过大时，计算机可能无法计算指数的结果，因此我们需要使用数学原理来减轻计算的负担：<br>
+$$y_k = \frac{e^{a_k}}{\sum_{i=1}^n{e^(a_i)}} =\frac{C e^{a_k}}{C \sum_{i=1}^n{e^(a_i)}} = \frac{e^{a_k+logC}}{\sum_{i=1}^n{e^(a_i+logC)}} =\frac{e^{a_k+C}}{\sum_{i=1}^n{e^(a_i+C)}}$$<br>
+公式中的常数C我们一般会选择数组中的最大值。<br>
+类似的，我们可以选择同样的方式处理sigmoid函数的溢出，<br>
+$$ \frac{1}{1+e^{-x}} = \frac{C}{C+e^{-x+logC}}$$</p>
+<h2 id="3-5-3-softmax函数的性质">3.5.3 softmax函数的性质</h2>
+<p>softmax函数的输出总是0到1之间的实数，并且这些实数的和为1，因此我们可以把softmax函数的输出认为是“概率”，一般神经网路也会把输出值最大的神经元所对应的类别作为识别类别。</p>
+<p>同时softmax函数的输出不改变原来的各个元素之间的大小关系，因此在实际过程中，输出层的softmax函数可以省略。</p>
+<p><strong>注意：机器学习的过程可以分类两个过程：“学习”和“推理”，在学习的过程中，模型会根据输入的数据集进行参数的学习，然后推理时，使用模型对未知的数据进行推理（分类）。</strong></p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">def softmax(<span class="keyword">a</span>):</span><br><span class="line">    C = np.<span class="built_in">max</span>(<span class="keyword">a</span>)</span><br><span class="line">    <span class="built_in">sum</span> = np.<span class="built_in">sum</span>(np.<span class="built_in">exp</span>(<span class="keyword">a</span>-C)) <span class="comment"># fix overflow</span></span><br><span class="line">    <span class="literal">return</span> np.<span class="built_in">exp</span>(<span class="keyword">a</span>-C)/<span class="built_in">sum</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">a</span> = np.arange(<span class="number">1</span>,<span class="number">10</span>,<span class="number">1</span>)</span><br><span class="line">print(softmax(<span class="keyword">a</span>))</span><br></pre></td></tr></table></figure>
+<h1>3.6 MNIST手写数字数据集的识别</h1>
+<h2 id="3-6-1-MNIST数据集预处理">3.6.1 MNIST数据集预处理</h2>
+<p>load_mnist()函数中有一个参数是normalize，来确定是否要<em>正规化（normalization）</em>，<strong>正规化是把数据限定到某个范围内的处理</strong>，对数据进行某种既定的转换称为数据额预处理(pre-processing)</p>
+<h2 id="3-6-2-神经网络的推理">3.6.2 神经网络的推理</h2>
+<h2 id="3-6-3-批处理">3.6.3 批处理</h2>
+<p>以批为单位，进行推理处理，能够实现更高速的运算。因为大多数处理数值计算的库都进行了能够高效处理大型数组运算的最优化，也就是说批处理一次性计算大型数组要比分开逐步计算各个小型数组速度更快。</p>
+<p>没有使用批处理前，运行时间为5.4s，使用批处理后运行时间为3.6s</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">from</span> dataset<span class="selector-class">.mnist</span> import load_mnist</span><br><span class="line">import sys, os</span><br><span class="line">import numpy as np</span><br><span class="line"><span class="selector-tag">from</span> PIL import Image</span><br><span class="line">import pickle</span><br><span class="line"></span><br><span class="line">sys<span class="selector-class">.path</span><span class="selector-class">.append</span>(os<span class="selector-class">.pardir</span>)</span><br><span class="line"></span><br><span class="line">def sigmoid(x):</span><br><span class="line">    y = []</span><br><span class="line">    k = -<span class="number">1</span></span><br><span class="line">    for i in x:</span><br><span class="line">        y.<span class="built_in">append</span>([])</span><br><span class="line">        k+=<span class="number">1</span></span><br><span class="line">        for j in i:</span><br><span class="line">            if j &lt; <span class="number">0</span>:</span><br><span class="line">                y[k].<span class="built_in">append</span>(np.<span class="built_in">exp</span>(j)/(<span class="number">1</span>+np.<span class="built_in">exp</span>(j)))</span><br><span class="line">            else:</span><br><span class="line">                y[k].<span class="built_in">append</span>(<span class="number">1</span>/(<span class="number">1</span>+np.<span class="built_in">exp</span>(-j)))</span><br><span class="line"></span><br><span class="line">    return np.<span class="built_in">array</span>(y)</span><br><span class="line">    </span><br><span class="line">def <span class="built_in">softmax</span>(a):</span><br><span class="line">    C = np.<span class="built_in">max</span>(a)</span><br><span class="line">    sum = np.<span class="built_in">sum</span>(np.<span class="built_in">exp</span>(a-C)) # fix overflow</span><br><span class="line">    return np.<span class="built_in">exp</span>(a-C)/sum</span><br><span class="line"></span><br><span class="line">def <span class="built_in">img_show</span>(img):</span><br><span class="line">    pil_img = Image.<span class="built_in">fromarray</span>(np.<span class="built_in">uint8</span>(img))</span><br><span class="line">    pil_img.<span class="built_in">show</span>()</span><br><span class="line"></span><br><span class="line">def <span class="built_in">get_data</span>():</span><br><span class="line">    (x_train, t_train),(x_test, t_test) = <span class="built_in">load_mnist</span>(flatten=True, normalize=False)</span><br><span class="line">    return x_test, t_test</span><br><span class="line"></span><br><span class="line">def <span class="built_in">init_network</span>():</span><br><span class="line">    with <span class="built_in">open</span>(<span class="string">&quot;./ch03/sample_weight.pkl&quot;</span>,<span class="string">&quot;rb&quot;</span>) as f:</span><br><span class="line">        network = pickle.<span class="built_in">load</span>(f)</span><br><span class="line">    return network</span><br><span class="line"></span><br><span class="line">def <span class="built_in">predict</span>(network, x):</span><br><span class="line">    a1 = <span class="built_in">sigmoid</span>(np.<span class="built_in">dot</span>(x, network[<span class="string">&#x27;W1&#x27;</span>])+network[<span class="string">&#x27;b1&#x27;</span>])</span><br><span class="line">    a2 = <span class="built_in">sigmoid</span>(np.<span class="built_in">dot</span>(a1, network[<span class="string">&#x27;W2&#x27;</span>])+network[<span class="string">&#x27;b2&#x27;</span>])</span><br><span class="line">    a3 = <span class="built_in">softmax</span>(np.<span class="built_in">dot</span>(a2, network[<span class="string">&#x27;W3&#x27;</span>])+network[<span class="string">&#x27;b3&#x27;</span>])</span><br><span class="line"></span><br><span class="line">    return a3</span><br><span class="line"></span><br><span class="line">accuracy = <span class="number">0</span></span><br><span class="line">batch_size = <span class="number">100</span></span><br><span class="line"></span><br><span class="line">network = <span class="built_in">init_network</span>()</span><br><span class="line">(x_test, t_test) = <span class="built_in">get_data</span>()</span><br><span class="line">for i in <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(x_test), batch_size):</span><br><span class="line">    result = np.<span class="built_in">argmax</span>(<span class="built_in">predict</span>(network, x_test[i:i+batch_size]), axis=<span class="number">1</span>)</span><br><span class="line">    accuracy += np.<span class="built_in">sum</span>(result == t_test[i:i+batch_size])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Accuracy:&quot;</span>+<span class="built_in">str</span>(<span class="built_in">float</span>(accuracy/<span class="built_in">len</span>(x_test))))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/cn/notes/machinelearning/" data-toggle="tooltip" data-placement="top" title="机器学习">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/cn/notes/perceptron/" data-toggle="tooltip" data-placement="top" title="感知机">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=神经网络&body=Hi,I found this website and thought you might like it http://yoursite-url/cn/notes/neuralnetwork/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Tue Jun 20 2023 15:12:40 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">3.1 从感知机到神经网络</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-1-1-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BE%8B%E5%AD%90"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">3.1.1 神经网络的例子</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-1-3-%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0%E7%99%BB%E5%9C%BA"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">3.1.3 激活函数登场</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">3.2 激活函数</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-2-1-%E9%98%B6%E8%B7%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8F%8A%E5%9B%BE%E5%83%8F%E7%BB%98%E5%88%B6"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">3.2.1 阶跃函数的实现及图像绘制</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-2-2-sigmoid%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8F%8A%E5%9B%BE%E5%83%8F%E7%BB%98%E5%88%B6"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">3.2.2 sigmoid函数的实现及图像绘制</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-2-3-%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">3.2.3 非线性函数</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-2-4-ReLU%E5%87%BD%E6%95%B0"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">3.2.4 ReLU函数</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">3.4 三层神经网络的实现</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">3.5 输出层的设计</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-5-1-%E6%81%92%E7%AD%89%E5%87%BD%E6%95%B0%E5%92%8Csoftmax%E5%87%BD%E6%95%B0"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">3.5.1 恒等函数和softmax函数</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-5-2-%E5%9C%A8%E4%BB%A3%E7%A0%81%E4%B8%AD%E5%AE%9E%E7%8E%B0softmax%E5%87%BD%E6%95%B0"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">3.5.2 在代码中实现softmax函数</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-5-3-softmax%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-nav-number">4.3.</span> <span class="toc-nav-text">3.5.3 softmax函数的性质</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">3.6 MNIST手写数字数据集的识别</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-6-1-MNIST%E6%95%B0%E6%8D%AE%E9%9B%86%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-nav-number">5.1.</span> <span class="toc-nav-text">3.6.1 MNIST数据集预处理</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-6-2-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E6%8E%A8%E7%90%86"><span class="toc-nav-number">5.2.</span> <span class="toc-nav-text">3.6.2 神经网络的推理</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-6-3-%E6%89%B9%E5%A4%84%E7%90%86"><span class="toc-nav-number">5.3.</span> <span class="toc-nav-text">3.6.3 批处理</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#神经网络" title="神经网络">神经网络</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>链友</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+          </li>
+          
+          <li>
+            <a href="http://beantech.org" target="_blank">Bean Tech</a>
+          </li>
+          
+          <li>
+            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+		<!-- Footer (contains ThemeColor、viewer) -->
+		<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/kay-kuo">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            <li>
+              <a target="_blank" href="https://www.zhihu.com/people/凯风自南">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa  fa-stack-1x fa-inverse">知</i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          Kay
+          2024
+          <br>
+          Theme by
+          <a target="_blank" rel="noopener" href="http://beantech.org">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a target="_blank" rel="noopener" href="https://v-vincen.life/">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="/js/hux-blog.min.js"></script>
+  <!-- catalog -->
+  <script async="true" type="text/javascript" src="/js/catalog.js"></script>
+  <!-- totop(rocket) -->
+  <script async="true" type="text/javascript" src="/js/totop.js"></script>
+
+  
+    <!-- Busuanzi JavaScript -->
+    <script async="async" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <!-- Scroll start -->
+    <script async="async" type="text/javascript" src="/js/scroll.js"></script>
+    <!-- Scroll end -->
+  
+
+  
+    <!-- LangSelect start -->
+    <script type="text/javascript" src="/js/langselect.js"></script>
+    <!-- LangSelect end -->
+  
+
+  
+
+  
+    <!-- ribbon -->
+    <script type="text/javascript" src="/js/ribbonDynamic.js"></script>
+  
+
+  
+
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  
+    <script async="async" type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+    <script async="async" type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  
+
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async ("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () { hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if ($('#tag_cloud').length !== 0) { async ("http://yoursite-url/js/jquery.tagcloud.js", function () { $.fn.tagcloud.defaults = { // size: { start: 1, end: 1, unit: 'em' }, color: {
+start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+		<!-- Search -->
+		
+		<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    <script src="/js/ziploader.js"></script>
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+            
+
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+		
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
