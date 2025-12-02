@@ -35,12 +35,12 @@ My research interests lie in multi-modal learning and continual learning, with a
 
 **Kai Guo**, Jiedong Wang, Xi Peng, Peng Hu, Hao Wang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Code**](https://github.com/XLearning-SCU/2025-IJCAI-CL2P) | [**中文简介**](https://mp.weixin.qq.com/s/Q01A_ERGSodmRR3Y0FLEQg) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- This work reveals a coupling between neural networks' "easy-to-hard" preference in learning and the trade-off of view consistency vs. specificity. 
 </div>
 </div>
 
-- [Learning Robust Multi-view Representation Using Dual-masked VAEs](https://www.ijcai.org/proceedings/2025/0701.pdf), Jiedong Wang, **Kai Guo**, Peng Hu, Xi Peng, Hao Wang, **IJCAI 2025**
+- ``IJCAI 2025`` [Learning Robust Multi-view Representation Using Dual-masked VAEs](https://www.ijcai.org/proceedings/2025/0701.pdf), Jiedong Wang, **Kai Guo**, Peng Hu, Xi Peng, Hao Wang.
 
 # 🎖 Honors and Awards
 - *2025.10* National Scholarship.
@@ -50,10 +50,3 @@ My research interests lie in multi-modal learning and continual learning, with a
 # 📖 Educations
 - *2024.09 - now*, Master, Sichuan University, Chengdu, China. 
 - *2020.09 - 2024.06*, Undergraduate, Sichuan University, Chengdu, China. 
-
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
