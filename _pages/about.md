@@ -40,7 +40,7 @@ My research interests lie in **multimodal learning** and **continual learning**,
 </div>
 </div>
 
-- <div class="badge">IJCAI 2025</div> [Learning Robust Multi-view Representation Using Dual-masked VAEs](https://www.ijcai.org/proceedings/2025/0701.pdf), Jiedong Wang, **Kai Guo**, Peng Hu, Xi Peng, Hao Wang | [**Code**](https://github.com/XLearning-SCU/2025-IJCAI-DualVAE)
+- ***[IJCAI'25]*** [Learning Robust Multi-view Representation Using Dual-masked VAEs](https://www.ijcai.org/proceedings/2025/0701.pdf), Jiedong Wang, **Kai Guo**, Peng Hu, Xi Peng, Hao Wang | [**Code**](https://github.com/XLearning-SCU/2025-IJCAI-DualVAE)
 
 # 🎖 Honors and Awards
 - *2025.10* National Scholarship.
