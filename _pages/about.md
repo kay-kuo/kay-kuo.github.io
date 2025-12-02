@@ -24,7 +24,7 @@ My research interests lie in **multimodal learning** and **continual learning**,
 
 
 # 🔥 News
-- *2025.08*: &nbsp;🎉 Two papers are accepted by IJCAI 2025. 
+- *2025.08*: &nbsp;🎉 One paper was accepted by IJCAI 2025. Thanks to all coauthors!
 
 # 📝 Publications 
 
