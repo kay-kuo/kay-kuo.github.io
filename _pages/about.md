@@ -18,9 +18,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi! My name is Kai Guo (郭凯). I’m a master's student from the College of Computer Science, Sichuan University, fortunately advised by Assoc Prof. [Hao Wang](https://cshaowang.github.io/) and Prof. [Xi Peng](https://pengxi.me/). I also collaborate closely with Prof. [Peng Hu](https://penghu-cs.github.io/).
+Hi! My name is Kai Guo (郭凯). I’m a master's student from the College of Computer Science, Sichuan University, fortunately advised by Assoc Prof. [Hao Wang (王浩)](https://cshaowang.github.io/) and Prof. [Xi Peng (彭玺)](https://pengxi.me/). I also collaborate closely with Prof. [Peng Hu (胡鹏)](https://penghu-cs.github.io/).
 
-My research interests lie in multi-modal learning and continual learning, with a focus on disentangling and enhancing the robustness of multi-view representations, as well as on developing methods for multi-modal continual learning.
+My research interests lie in **multimodal learning** and **continual learning**, with a focus on disentangling and enhancing the robustness of multi-view representations, as well as on developing methods for multimodal continual learning.
 
 
 # 🔥 News
@@ -49,4 +49,5 @@ My research interests lie in multi-modal learning and continual learning, with a
 
 # 📖 Educations
 - *2024.09 - now*, Master, Sichuan University, Chengdu, China. 
-- *2020.09 - 2024.06*, Undergraduate, Sichuan University, Chengdu, China. 
+- *2020.09 - 2024.06*, Undergraduate, Sichuan University, Chengdu, China.
+- *2017.09 - 2020.06*, Wuyi Middle School, Hebei, China
