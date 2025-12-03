@@ -43,9 +43,10 @@ My research interests lie in **multimodal learning** and **continual learning**,
 - ***[IJCAI'25]*** [Learning Robust Multi-view Representation Using Dual-masked VAEs](https://www.ijcai.org/proceedings/2025/0701.pdf), Jiedong Wang, **Kai Guo**, Peng Hu, Xi Peng, Hao Wang. [**Code**](https://github.com/XLearning-SCU/2025-IJCAI-DualVAE)
 
 # 🎖 Honors and Awards
-- *2025.10* National Scholarship.
-- *2025.09* Outstanding Student of Sichuan University.
-- *2024.07* First-Class Academic Scholarship, Sichuan University. 
+- *2025.10* National Scholarship (Top 1%)
+- *2025.09* Outstanding Student of Sichuan University
+- *2024.07* First-Class Academic Scholarship, Sichuan University
+- *2024.03* Zili-Zhidong Scholarship
 
 # 📖 Educations
 - *2024.09 - now*, Master, Sichuan University, Chengdu, China. 
