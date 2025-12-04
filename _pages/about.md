@@ -52,3 +52,6 @@ My research interests lie in **multimodal learning** and **continual learning**,
 - *2024.09 - now*, Master, Sichuan University, Chengdu, China. 
 - *2020.09 - 2024.06*, Undergraduate, Sichuan University, Chengdu, China.
 - *2017.09 - 2020.06*, Wuyi Middle School, Hebei, China
+
+# 🙋 Service
+- Conference Reviewer: PRCV
