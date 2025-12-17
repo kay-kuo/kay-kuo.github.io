@@ -36,7 +36,7 @@ My research interests lie in **multimodal learning** and **continual learning**,
 **Kai Guo**, Jiedong Wang, Xi Peng, Peng Hu, Hao Wang
 
 [**Code**](https://github.com/XLearning-SCU/2025-IJCAI-CL2P) | [**中文简介**](https://mp.weixin.qq.com/s/Q01A_ERGSodmRR3Y0FLEQg) | [**Poster**](https://github.com/XLearning-SCU/2025-IJCAI-CL2P/blob/main/POSTER.pdf )<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- This work reveals a coupling between neural networks' "easy-to-hard" preference in learning and the trade-off of view consistency vs. specificity. 
+- This work reveals a coupling between neural networks' "easy-to-hard" preference and the "view consistency vs. specificity". 
 </div>
 </div>
 
