@@ -54,4 +54,4 @@ My research interests lie in **multimodal learning** and **continual learning**,
 - *2017.09 - 2020.06*, Wuyi Middle School, Hebei, China
 
 # 🙋 Service
-- Conference Reviewer: ICML, PAKDD, PRCV
+- Conference Reviewer: PAKDD, PRCV
