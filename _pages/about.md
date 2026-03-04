@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi! My name is Kai Guo (郭凯). I’m a master's student from the College of Computer Science, Sichuan University, fortunately advised by Assoc Prof. [Hao Wang (王浩)](https://cshaowang.github.io/) and Prof. [Xi Peng (彭玺)](https://pengxi.me/). I also collaborate closely with Prof. [Peng Hu (胡鹏)](https://penghu-cs.github.io/).
+Hi! My name is Kai Guo (郭凯). I’m a master's student from the [XLearning lab](https://xlearning-lab.com/), College of Computer Science, Sichuan University, fortunately advised by Assoc Prof. [Hao Wang (王浩)](https://cshaowang.github.io/) and Prof. [Xi Peng (彭玺)](https://pengxi.me/). I also collaborate closely with Prof. [Peng Hu (胡鹏)](https://penghu-cs.github.io/).
 
 My research interests lie in **multimodal learning** and **continual learning**, with a focus on disentangling and enhancing the robustness of multi-view representations, as well as on developing methods for multimodal continual learning.
 
