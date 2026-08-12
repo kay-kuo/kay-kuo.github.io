@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi! My name is Kai Guo (郭凯). I’m a master's student from the [XLearning lab](https://xlearning-lab.com/), College of Computer Science, Sichuan University, fortunately advised by Assoc Prof. [Hao Wang (王浩)](https://cshaowang.github.io/) and Prof. [Xi Peng (彭玺)](https://pengxi.me/). I also collaborate closely with Prof. [Peng Hu (胡鹏)](https://penghu-cs.github.io/).
+Hi! My name is Kai Guo (郭凯). I’m a master's student in the [XLearning lab](https://xlearning-lab.com/), College of Computer Science, Sichuan University, fortunately advised by Assoc Prof. [Hao Wang (王浩)](https://cshaowang.github.io/) and Prof. [Xi Peng (彭玺)](https://pengxi.me/). I also collaborate closely with Prof. [Peng Hu (胡鹏)](https://penghu-cs.github.io/).
 
 My research interests lie in **multimodal learning** and **continual learning**, with a focus on disentangling and enhancing the robustness of multi-view representations, as well as on developing methods for multimodal continual learning.
 
@@ -42,6 +42,9 @@ My research interests lie in **multimodal learning** and **continual learning**,
 
 - ***[IJCAI'25]*** [Learning Robust Multi-view Representation Using Dual-masked VAEs](https://www.ijcai.org/proceedings/2025/0701.pdf), Jiedong Wang, **Kai Guo**, Peng Hu, Xi Peng, Hao Wang. [**Code**](https://github.com/XLearning-SCU/2025-IJCAI-DualVAE)
 
+# 💻 Experiences
+- *2026.07 - present*, Research Intern, Foundation Models Department, Kuaishou Technology
+
 # 🎖 Honors and Awards
 - *2025.10* National Scholarship (Top 1%)
 - *2025.09* Outstanding Student of Sichuan University
@@ -49,9 +52,10 @@ My research interests lie in **multimodal learning** and **continual learning**,
 - *2024.03* Zili-Zhidong Scholarship
 
 # 📖 Educations
-- *2024.09 - now*, Master, Sichuan University, Chengdu, China. 
+- *2024.09 - present*, Master's, Sichuan University, Chengdu, China. 
 - *2020.09 - 2024.06*, Undergraduate, Sichuan University, Chengdu, China.
 - *2017.09 - 2020.06*, Wuyi Middle School, Hebei, China
 
 # 🙋 Service
-- Conference Reviewer: ACL 2026, PAKDD 2026
+- Conference Reviewer: AAAI 2027, ACL 2026, ACML 2026, PAKDD 2026
+- Journal Reviewer: ML
