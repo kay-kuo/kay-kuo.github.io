@@ -43,7 +43,7 @@ My research interests lie in **multimodal learning** and **continual learning**,
 - ***[IJCAI'25]*** [Learning Robust Multi-view Representation Using Dual-masked VAEs](https://www.ijcai.org/proceedings/2025/0701.pdf), Jiedong Wang, **Kai Guo**, Peng Hu, Xi Peng, Hao Wang. [**Code**](https://github.com/XLearning-SCU/2025-IJCAI-DualVAE)
 
 # 💻 Experiences
-- *2026.07 - present*, Research Intern, Foundation Models Department, Kuaishou Technology
+- *2026.07 - present*, Research Intern, Foundation Models Department, Kuaishou Technology, Beijing
 
 # 🎖 Honors and Awards
 - *2025.10* National Scholarship (Top 1%)
