@@ -27,6 +27,17 @@ My research interests lie in **multimodal learning** and **continual learning**,
 - *2025.08*: &nbsp;🎉 One paper was accepted by IJCAI 2025. Thanks to all coauthors!
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/DynaMCL.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[NeuCME: Toward Dynamic Multimodal Continual Learning via Neural Combinatorics of Multiple Experts](https://arxiv.org/pdf/2609.07009)
+
+**Kai Guo**, Chuanbin Liu, Peng Hu, Hao Wang, Xi Peng
+
+- This work is the first to propose a unified framework for dynamic multimodal continual learning.
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/CL2P.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -46,6 +57,7 @@ My research interests lie in **multimodal learning** and **continual learning**,
 - *2026.07 - present*, Research Intern, Foundation Models Department, Kuaishou Technology, Beijing
 
 # 🎖 Honors and Awards
+- *2026.07* First-Class Academic Scholarship, Sichuan University
 - *2025.10* National Scholarship (Top 1%)
 - *2025.09* Outstanding Student of Sichuan University
 - *2024.07* First-Class Academic Scholarship, Sichuan University
