@@ -18,16 +18,14 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi! My name is Kai Guo (郭凯). I’m a master's student in the [XLearning lab](https://xlearning-lab.com/), College of Computer Science, Sichuan University, fortunately advised by Assoc Prof. [Hao Wang (王浩)](https://cshaowang.github.io/) and Prof. [Xi Peng (彭玺)](https://pengxi.me/). I also collaborate closely with Prof. [Peng Hu (胡鹏)](https://penghu-cs.github.io/).
-
-My research interests lie in **multimodal learning** and **continual learning**, with a focus on disentangling and enhancing the robustness of multi-view representations, as well as on developing methods for multimodal continual learning.
+Hi! My name is Kai Guo (郭凯). I’m a master's student in the [XLearning lab](https://xlearning-lab.com/), College of Computer Science, Sichuan University, fortunately advised by Assoc Prof. [Hao Wang (王浩)](https://cshaowang.github.io/) and Prof. [Xi Peng (彭玺)](https://pengxi.me/). I also collaborate closely with Prof. [Peng Hu (胡鹏)](https://penghu-cs.github.io/). My research interests lie in **multimodal foundation models**, **continual learning**, and **reinforcement learning**. From July to the present in 2026, I worked as a research intern at the Kuaishou Foundation Models Department, where I conducted research on MOPD for LLMs.
 
 
 # 🔥 News
-- *2025.08*: &nbsp;🎉 One paper was accepted by IJCAI 2025. Thanks to all coauthors!
+- *2025.08*: &nbsp;🎉 Two paper was accepted by IJCAI 2025. Thanks to all coauthors!
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/DynaMCL.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/DynaMCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [NeuCME: Toward Dynamic Multimodal Continual Learning via Neural Combinatorics of Multiple Experts](https://arxiv.org/pdf/2609.07009)
